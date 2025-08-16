@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description: "Personal portfolio",
   keywords: ["portfolio", "developer", "projects", "professional"],
   authors: [{ name: "Ryan Berke" }],
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
+  }
 };
 
 export default function RootLayout({

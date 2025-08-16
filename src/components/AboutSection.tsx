@@ -76,7 +76,7 @@ export function AboutSection() {
               {/* About Section Image */}
               <div className="relative w-full h-64 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/about.jpg"
+                  src="/about.JPG"
                   alt="me"
                   fill
                   className="object-cover"
