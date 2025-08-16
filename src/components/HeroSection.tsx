@@ -20,7 +20,7 @@ export function HeroSection() {
         </div>
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold text-slate-800 dark:text-white mb-6">
-            Hi, I'm <span className="text-violet-600 dark:text-violet-400">Ryan Berke</span>
+            Hi, I&apos;m <span className="text-violet-600 dark:text-violet-400">Ryan Berke</span>
           </h1>
           <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-8">
             IT Professional & Aspiring Cloud Engineer

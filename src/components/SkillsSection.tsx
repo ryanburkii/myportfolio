@@ -31,7 +31,7 @@ export function SkillsSection() {
           </h2>
           <div className="w-24 h-1 bg-violet-600 mx-auto mb-4"></div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            I've worked with a variety of technologies despite my young career.
+            I&apos;ve worked with a variety of technologies despite my young career.
           </p>
         </div>
 

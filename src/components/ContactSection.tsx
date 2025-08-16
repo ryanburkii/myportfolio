@@ -59,8 +59,8 @@ export function ContactSection() {
           </h2>
           <div className="w-24 h-1 bg-violet-600 mx-auto mb-4"></div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects. 
-            Feel free to reach out if you'd like to work together or just say hello!
+            I&apos;m always interested in new opportunities and exciting projects. 
+            Feel free to reach out if you&apos;d like to work together or just say hello!
           </p>
         </div>
 

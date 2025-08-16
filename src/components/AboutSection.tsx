@@ -22,7 +22,7 @@ export function AboutSection() {
               what I always loved. I have been working in IT for ~2 years, and I am currently working on developing my skills in cloud infrastructure and cloud security.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              When I'm not working, I enjoy working on my homelab until something breaks, fishing, playing video games, and attending music festivals. Occasionally,
+              When I&apos;m not working, I enjoy working on my homelab until something breaks, fishing, playing video games, and attending music festivals. Occasionally,
               I get the urge to spring into a new hobby, and spend way more money than I should on it.
             </p>
           </div>
@@ -66,7 +66,7 @@ export function AboutSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-slate-800 dark:text-white">
-                    Pursuing a Bachelor's in Psychology
+                    Pursuing a Bachelor&apos;s in Psychology
                   </h4>
                   <p className="text-slate-600 dark:text-slate-300">
                     Started university at Florida State University
