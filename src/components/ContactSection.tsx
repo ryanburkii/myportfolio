@@ -9,12 +9,38 @@ export function ContactSection() {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // You can integrate with a service like Formspree, Netlify Forms, or your own backend
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const responseData = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        console.error('API Error:', responseData.error);
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Fetch Error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -112,10 +138,23 @@ export function ContactSection() {
               
               <button
                 type="submit"
-                className="w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                disabled={isSubmitting}
+                className="w-full bg-violet-600 hover:bg-violet-700 disabled:bg-violet-400 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
+              
+              {submitStatus === 'success' && (
+                <div className="text-green-600 dark:text-green-400 text-center py-2">
+                  Message sent successfully!
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="text-red-600 dark:text-red-400 text-center py-2">
+                  Failed to send message. Please try again.
+                </div>
+              )}
             </form>
           </div>
 

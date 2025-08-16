@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ryan Berke - Personal Portfolio",
-  description: "Personal portfolio showcasing my projects, skills, and professional experience",
+  title: "Ryan Berke",
+  description: "Personal portfolio",
   keywords: ["portfolio", "developer", "projects", "professional"],
   authors: [{ name: "Ryan Berke" }],
 };
