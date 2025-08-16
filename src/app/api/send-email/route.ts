@@ -5,7 +5,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: NextRequest) {
   try {
-    // Check if API key is set
+    // check if API key is set
     if (!process.env.RESEND_API_KEY) {
       console.error('RESEND_API_KEY not found');
       return NextResponse.json({ error: 'API key not configured. Please add RESEND_API_KEY to your environment variables.' }, { status: 500 });
