@@ -15,10 +15,10 @@ export function SkillsSection() {
       { name: "Bash", level: 35 },
     ],
     /*"Tools & Others": [
-      { name: "Git", level: 70 },
-      { name: "Proxmox", level: 70 },
-      { name: "Docker", level: 60 },
-      { name: "AWS", level: 40 },
+      { name: "Git", level:  },
+      { name: "Proxmox", level:  },
+      { name: "Docker", level:  },
+      { name: "AWS", level:  },
     ]*/
   };
 
@@ -31,7 +31,8 @@ export function SkillsSection() {
           </h2>
           <div className="w-24 h-1 bg-violet-600 mx-auto mb-4"></div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            I&apos;ve worked with a variety of technologies despite my young career.
+            I&apos;ve worked with a variety of technologies despite my young
+            career.
           </p>
         </div>
 
@@ -70,17 +71,19 @@ export function SkillsSection() {
             Currently Learning
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["AWS", "Linux Administration", "Kubernetes", "Git", "Docker"].map((skill) => (
-              <span
-                key={skill}
-                className="px-4 py-2 bg-violet-100 dark:bg-violet-900 text-violet-800 dark:text-violet-200 rounded-full text-sm font-medium"
-              >
-                {skill}
-              </span>
-            ))}
+            {["AWS", "Snowflake", "Kubernetes", "Git", "Docker"].map(
+              (skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 bg-violet-100 dark:bg-violet-900 text-violet-800 dark:text-violet-200 rounded-full text-sm font-medium"
+                >
+                  {skill}
+                </span>
+              )
+            )}
           </div>
         </div>
       </div>
     </section>
   );
-} 
+}

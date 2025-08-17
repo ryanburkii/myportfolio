@@ -1,8 +1,8 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export function AboutSection() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-800 dark:text-white mb-4">
@@ -17,13 +17,18 @@ export function AboutSection() {
               Who I Am
             </h3>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              My name is Ryan, I have held a strong passion for technology for as long as I can remember.
-              While my education background is in psychology and neuroscience, I ultimately decided I wanted to take a step back, and pursue
-              what I always loved. I have been working in IT for ~2 years, and I am currently working on developing my skills in cloud infrastructure and cloud security.
+              My name is Ryan and I have held a strong passion for technology
+              for as long as I can remember. While my education background is in
+              psychology and neuroscience, I ultimately decided I wanted to take
+              a step back, and pursue what I always loved. I have been working
+              in IT for ~2 years, and I am currently working on developing my
+              skills in cloud infrastructure and cloud security.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-              When I&apos;m not working, I enjoy working on my homelab until something breaks, fishing, playing video games, and attending music festivals. Occasionally,
-              I get the urge to spring into a new hobby, and spend way more money than I should on it.
+              When I&apos;m not working, I enjoy working on my homelab until
+              something breaks, fishing, playing video games, and attending
+              music festivals. Occasionally, I get the urge to spring into a new
+              hobby, and spend way more money than I should on it.
             </p>
           </div>
 
@@ -88,4 +93,4 @@ export function AboutSection() {
       </div>
     </section>
   );
-} 
+}
