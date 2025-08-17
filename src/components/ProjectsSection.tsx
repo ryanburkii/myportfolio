@@ -34,7 +34,7 @@ export function ProjectsSection() {
           </h2>
           <div className="w-24 h-1 bg-violet-600 mx-auto mb-4"></div>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto">
-            Here are some of the projects I'm currently working on.
+            Here are some of the projects I&apos;m currently working on.
           </p>
         </div>
 
