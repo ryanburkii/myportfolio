@@ -1,28 +1,37 @@
 "use client";
 
+import Image from "next/image";
+
 export function ProjectsSection() {
   const projects = [
     {
       title: "Homelab",
       description:
         "My mini server stack consisting of 2 Proxmox servers, a small Unifi stack, and a custom built NAS. Current services: Plex, NextCloud, game servers, and more.",
-      image: "/api/placeholder/400/250",
+      image: "/homelab.jpeg",
       github: "https://github.com/ryanburkii/homelab",
     },
-    {
+    /*{
       title: "Workout App",
       description:
         "A rough mockup of a competitive workout tracker. I plan to implement a social aspect, such as a leaderboard for sharing statistics with friends.",
       image: "/api/placeholder/400/250",
       github: "https://github.com/ryanburkii/workouttrackerapp",
-    },
+    },*/
     {
       title: "Portfolio Website",
       description:
         "This website! I plan to expand this website with more information about my projects and to showcase any future rabbit holes I fall down.",
-      image: "/api/placeholder/400/250",
+      image: "/port.png",
       github: "https://github.com/ryanburkii/myportfolio",
     },
+    {
+      title: "LatiArch",
+      description:
+        "My custom Arch Linux & Hyprland setup. This project is forked from Omarchy, however I plan to add my own set of features.",
+      image: "/latiarch.png",
+      github: "https://github.com/ryanburkii/latiarch",
+    }
   ];
 
   return (
@@ -44,10 +53,13 @@ export function ProjectsSection() {
               key={index}
               className="bg-white dark:bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="h-48 bg-gradient-to-br from-violet-400 to-purple-500 relative">
-                <div className="absolute inset-0 flex items-center justify-center text-white text-2xl font-bold">
-                  {project.title}
-                </div>
+              <div className="h-48 relative overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover"
+                />
               </div>
 
               <div className="p-6">
