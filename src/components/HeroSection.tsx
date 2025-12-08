@@ -8,7 +8,7 @@ export function HeroSection() {
       <div className="text-center max-w-4xl mx-auto">
         {/* Profile Picture */}
         <div className="mb-8">
-          <div className="w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-violet-200 dark:border-violet-800">
+          <div className="w-64 h-64 mx-auto mb-6 rounded-full overflow-hidden border-4 border-violet-200 dark:border-violet-800 drop-shadow-[0_0_8px_rgba(139,92,246,0.7)]">
             <Image
               src="/profile-photo.jpg"
               alt="Ryan Berke"
@@ -28,9 +28,9 @@ export function HeroSection() {
             IT Professional & Aspiring Cloud Engineer
           </p>
           <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
-            I am a dedicated IT professional with a passion for technology and I
-            am always looking to learn new things. Currently, my main focus is
-            on cloud infrastructure and cloud security.
+            I am an extremely driven individual with a passion for technology
+            and I am always looking to learn new things. Currently, my main
+            focus is on cloud infrastructure and cloud security.
           </p>
         </div>
 
